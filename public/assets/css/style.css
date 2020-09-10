@@ -1,0 +1,15 @@
+h1 {
+    color:red;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+body {
+    background-color: orange;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -2,11 +2,10 @@
   
   ## GitHub Username/Profile:
   Nolanbt
-
+  https://github.com/Nolanbt
 
   ## Email: 
   nbakert@gmail.com
-  https://github.com/Nolanbt
 
   ## Table of Contents
   * [Description](###Description)
@@ -21,7 +20,8 @@
   npm i
 
   ### LINK
-  
+  https://nolans-eat-da-burger.herokuapp.com/
+  https://nolanbt.github.io/Portfolio/.
 
   ### Contributions
   E-mail me first for any contributions. 

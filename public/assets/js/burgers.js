@@ -1,8 +1,10 @@
-$(".create-form").on("submit", function (event) {
+$("#subBtn").on("click", function (event) {
     event.preventDefault();
+    console.log("This is working");
 
     var newBurger = {
         burgerName: $("#food").val().trim(),
+        devoured: false
     };
     console.log(newBurger);
     $.ajax("/api/burgers", {
@@ -15,3 +17,27 @@ $(".create-form").on("submit", function (event) {
         }
     );
 });
+
+$("#devourBtn").on("click", function (event) {
+    event.preventDefault();
+
+})
+
+$("#devourBtn").on("click", function (event) {
+    var id = $(this).data("id");
+    var devour = $(this).data("devour")
+    devour = !devour;
+    var newDevour = {
+        devoured: devour
+    }
+    $.ajax("/api/burgers/" + id, {
+        type: "PUT",
+        data: newDevour
+    }).then(
+        function () {
+            console.log("changed devoured to", devour);
+            location.reload();
+        }
+    );
+});
+

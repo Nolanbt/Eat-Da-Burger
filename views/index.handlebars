@@ -6,7 +6,9 @@
         <ul class="p-1" style="list-style-type: none;">
             {{#each burgers}}
             {{#unless devoured}}
-            <p class="bg-secondary p-1 border">{{id}} - {{burger_name}}</p>
+            <p class="bg-secondary p-1 border">{{burger_name}}
+                <button class="btn bg-info"  id="devourBtn" data-id="{{id}}" data-devour="{{devoured}}">Devour!</button>
+            </p>
             {{/unless}}
             {{/each}}
         </ul>
